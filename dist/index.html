@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/equation-solver-web/assets/favicon.4dd70406.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+        
+
+        
+
+        <title>Vite App</title>
+      <script type="module" crossorigin src="/equation-solver-web/assets/index.603066a7.js"></script>
+      <link rel="stylesheet" href="/equation-solver-web/assets/index.91c35697.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Equation solver</h1>
+
+            <div class="even-columns">
+                <section class="equation">
+                    <h2 class="equation__title">Equation</h2>
+                    <label class="equation__type-chooser-label" for="equation-type">Equation type</label>
+                    <div
+                        class="button-group equation__type-chooser"
+                        role="combobox"
+                        id="equation-type-chooser"
+                    >
+                        <button class="button-group-option equation__type equation__type--affine">
+                            Affine
+                        </button>
+                        <button class="button-group-option equation__type equation__type--trinomial">
+                            Trinomial
+                        </button>
+                    </div>
+
+                    <label>Equation</label>
+                    <p class="equation__def equation__def--affine" spellcheck="false">
+                        <span class="equation__def-editable equation__def-affine-a" contenteditable
+                            >1</span
+                        >x +
+                        <span class="equation__def-editable equation__def-affine-b" contenteditable
+                            >0</span
+                        >
+                        =
+                        <span class="equation__def-editable equation__def-affine-y" contenteditable
+                            >0</span
+                        >
+                    </p>
+                    <p class="equation__def equation__def--trinomial" spellcheck="false">
+                        <span class="equation__def-editable equation__def-trinomial-a" contenteditable
+                            >1</span
+                        >x² +
+                        <span class="equation__def-editable equation__def-trinomial-b" contenteditable
+                            >0</span
+                        >x +
+                        <span class="equation__def-editable equation__def-trinomial-c" contenteditable
+                            >0</span
+                        >
+                        =
+                        <span class="equation__def-editable equation__def-trinomial-y" contenteditable
+                            >0</span
+                        >
+                    </p>
+
+                    <button class="compute">Compute!</button>
+                </section>
+                <section class="result">
+                    <h2 class="result__title">Result</h2>
+
+                    <div class="result__zone">
+                        <p class="result__count">Click "compute!" to find solutions.</p>
+                        <p class="result__solutions"></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
